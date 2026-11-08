@@ -1,10 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>casa-vacanza-guardiano</title>
+    <title>Terrazza a mare Corallo | Casa vacanze fronte spiaggia a Marina di Ragusa</title>
+    <meta
+      name="description"
+      content="Terrazza a mare Corallo: casa vacanze fronte spiaggia a Marina di Ragusa, con grande terrazza sul mare, giardino, 2 camere e 2 bagni. Richiedi la disponibilità direttamente al proprietario."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:title" content="Terrazza a mare Corallo | Casa vacanze fronte spiaggia a Marina di Ragusa" />
+    <meta
+      property="og:description"
+      content="Casa vacanze fronte spiaggia a Marina di Ragusa, con grande terrazza sul mare, giardino, 2 camere e 2 bagni."
+    />
+    <script>
+      // Applica subito palette e tema salvati, prima che la pagina venga disegnata
+      (function () {
+        try {
+          var palette = localStorage.getItem("tema-palette") || "mediterraneo";
+          var modo = localStorage.getItem("tema-modo") || "auto";
+          var scuro = modo === "scuro" || (modo === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          var radice = document.documentElement;
+          radice.setAttribute("data-palette", palette);
+          radice.setAttribute("data-theme", scuro ? "dark" : "light");
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

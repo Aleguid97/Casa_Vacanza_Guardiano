@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a3550"/>
+      <stop offset="1" stop-color="#2f7ea1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="1248" cy="243" r="81" fill="#fff" fill-opacity="0.32"/>
+  <path d="M0 666 Q 400 594 800 666 T 1600 666 V 900 H0 Z" fill="#fff" fill-opacity="0.13"/>
+  <path d="M0 756 Q 400 693 800 756 T 1600 756 V 900 H0 Z" fill="#fff" fill-opacity="0.11"/>
+  <rect x="24" y="828" width="508" height="44" rx="22" fill="#000" fill-opacity="0.38"/>
+  <text x="46" y="857" fill="#fff" font-family="system-ui, Segoe UI, Roboto, sans-serif" font-size="20">Foto principale: la casa fronte spiaggia</text>
+</svg>

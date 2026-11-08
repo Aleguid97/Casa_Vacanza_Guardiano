@@ -1,14 +1,26 @@
 import { Link } from "react-router-dom";
 
-function Hero({ titolo, sottotitolo }) {
+function Hero({ etichetta, titolo, sottotitolo, immagine, testoPulsante = "Richiedi disponibilità", link = "/contatti", children }) {
   return (
-    <section className="relative flex min-h-[60vh] items-center justify-center absolute inset-0 bg-gray-500/40 rounded-tr-[100px]">
-      <div className="relative max-w-2xl">
-        <h1 className="text-4xl font-bold md:text-5xl">{titolo}</h1>
-        {sottotitolo && <p className="mt-4 text-lg">{sottotitolo}</p>}
-        <Link to="/contatti" className="rounded-md bg-white px-6 py-3 font-medium text-slate-900 hover:bg-slate-100">
-          Richiedi disponibilità
-        </Link>
+    <section className="relative isolate flex min-h-[78vh] items-center overflow-hidden rounded-tr-[100px] bg-mare-scuro text-white">
+      <img src={immagine} alt="" className="absolute inset-0 -z-20 h-full w-full object-cover" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-mare-scuro/85 via-mare-scuro/55 to-transparent" />
+
+      <div className="mx-auto w-full max-w-6xl px-4 py-24">
+        <div className="max-w-2xl">
+          {etichetta && (
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-white/80">{etichetta}</p>
+          )}
+          <h1 className="text-4xl font-semibold text-white md:text-6xl">{titolo}</h1>
+          {sottotitolo && <p className="mt-5 text-lg text-white/90 md:text-xl">{sottotitolo}</p>}
+          {children && <div className="mt-6">{children}</div>}
+          <Link
+            to={link}
+            className="mt-8 inline-block rounded-full bg-corallo px-8 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-corallo-scuro"
+          >
+            {testoPulsante}
+          </Link>
+        </div>
       </div>
     </section>
   );

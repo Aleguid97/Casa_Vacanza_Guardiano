@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e4a6b"/>
+      <stop offset="1" stop-color="#4f9bbd"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <circle cx="624" cy="162" r="54" fill="#fff" fill-opacity="0.32"/>
+  <path d="M0 444 Q 200 396 400 444 T 800 444 V 600 H0 Z" fill="#fff" fill-opacity="0.13"/>
+  <path d="M0 504 Q 200 462 400 504 T 800 504 V 600 H0 Z" fill="#fff" fill-opacity="0.11"/>
+  <rect x="24" y="528" width="335" height="44" rx="22" fill="#000" fill-opacity="0.38"/>
+  <text x="46" y="557" fill="#fff" font-family="system-ui, Segoe UI, Roboto, sans-serif" font-size="20">Foto: terrazza e giardino</text>
+</svg>

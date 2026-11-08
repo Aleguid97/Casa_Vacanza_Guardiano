@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9703b"/>
+      <stop offset="1" stop-color="#e9b27a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <circle cx="624" cy="270" r="90" fill="#fff" fill-opacity="0.32"/>
+  <path d="M0 740 Q 200 660 400 740 T 800 740 V 1000 H0 Z" fill="#fff" fill-opacity="0.13"/>
+  <path d="M0 840 Q 200 770 400 840 T 800 840 V 1000 H0 Z" fill="#fff" fill-opacity="0.11"/>
+  <rect x="24" y="928" width="335" height="44" rx="22" fill="#000" fill-opacity="0.38"/>
+  <text x="46" y="957" fill="#fff" font-family="system-ui, Segoe UI, Roboto, sans-serif" font-size="20">Foto: la veranda sul mare</text>
+</svg>
