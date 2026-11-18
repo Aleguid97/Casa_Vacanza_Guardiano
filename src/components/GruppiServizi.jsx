@@ -7,7 +7,7 @@ function GruppiServizi({ gruppi }) {
           <ul className="mt-3 space-y-2 text-sm text-inchiostro/80">
             {gruppo.voci.map((voce) => (
               <li key={voce} className="flex gap-2">
-                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-corallo" />
+                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accento" />
                 <span>{voce}</span>
               </li>
             ))}

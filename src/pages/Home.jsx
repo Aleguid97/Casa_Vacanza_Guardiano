@@ -49,7 +49,7 @@ function Home() {
       </Hero>
 
       <div className="relative z-10 -mt-12 flex justify-center">
-        <LogoCorallo dimensione={96} titolo={`Logo di ${SITO.nome}`} className="shadow-xl ring-8 ring-sabbia" />
+        <LogoCorallo dimensione={160} titolo={`Logo di ${SITO.nome}`} className="shadow-xl ring-8 ring-sabbia" />
       </div>
 
       <Sezione titolo="Perché sceglierci" sottotitolo="Tre motivi per cui gli ospiti tornano.">
@@ -65,7 +65,7 @@ function Home() {
             className="aspect-4/5 w-full rounded-2xl object-cover"
           />
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-corallo-testo">La casa</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-accento-testo">La casa</p>
             <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Una veranda sul mare</h2>
             <p className="mt-4 text-inchiostro/80">
               La veranda è il cuore della casa: ampia e attrezzata, si affaccia direttamente sul mare ed è il
@@ -110,7 +110,7 @@ function Home() {
         <ul className="mx-auto grid max-w-3xl gap-4 sm:grid-cols-3">
           {vicini.map((luogo) => (
             <li key={luogo.nome} className="rounded-2xl bg-sabbia p-5 text-center">
-              <p className="font-titolo text-2xl font-semibold text-corallo-testo">{luogo.distanza}</p>
+              <p className="font-titolo text-2xl font-semibold text-accento-testo">{luogo.distanza}</p>
               <p className="mt-1 text-sm font-medium text-inchiostro/80">{luogo.nome}</p>
             </li>
           ))}

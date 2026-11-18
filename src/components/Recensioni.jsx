@@ -18,7 +18,7 @@ function Recensioni({ dati }) {
                 <span className="font-semibold text-titoli">{formato(categoria.valore)}</span>
               </div>
               <div className="mt-1 h-2 rounded-full bg-sabbia-scuro">
-                <div className="h-2 rounded-full bg-corallo" style={{ width: `${categoria.valore * 10}%` }} />
+                <div className="h-2 rounded-full bg-accento" style={{ width: `${categoria.valore * 10}%` }} />
               </div>
             </li>
           ))}

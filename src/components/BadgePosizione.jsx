@@ -48,7 +48,7 @@ function BadgePosizione({ testo = "Fronte spiaggia" }) {
         }`}
       >
         <span className="block rounded-xl bg-superficie p-4 text-inchiostro shadow-xl">
-          <span className="block text-xs font-semibold uppercase tracking-wider text-corallo-testo">Dove siamo</span>
+          <span className="block text-xs font-semibold uppercase tracking-wider text-accento-testo">Dove siamo</span>
           <span className="mt-1 block font-medium">{RECAPITI.indirizzo}</span>
           <a
             href={LINK_MAPPA}

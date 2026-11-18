@@ -16,11 +16,11 @@ const collegamenti = [
 function Footer() {
   return (
     <footer className="relative overflow-hidden bg-mare-scuro text-white/85">
-      <Decori seme="footer" quanti={2} />
+      <Decori seme="footer" quanti={2} monocromo />
       <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <LogoCorallo dimensione={52} />
+            <LogoCorallo dimensione={64} variante="simbolo" />
             <p className="font-titolo text-xl font-semibold text-white">{SITO.nome}</p>
           </div>
           <p className="mt-2 text-sm">{SITO.slogan}</p>

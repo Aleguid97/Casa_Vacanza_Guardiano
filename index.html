@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0d4463" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terrazza a mare Corallo | Casa vacanze fronte spiaggia a Marina di Ragusa</title>
@@ -21,7 +22,7 @@
       // Applica subito palette e tema salvati, prima che la pagina venga disegnata
       (function () {
         try {
-          var palette = localStorage.getItem("tema-palette") || "mediterraneo";
+          var palette = localStorage.getItem("tema-palette") || "logo";
           var modo = localStorage.getItem("tema-modo") || "auto";
           var scuro = modo === "scuro" || (modo === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches);
           var radice = document.documentElement;

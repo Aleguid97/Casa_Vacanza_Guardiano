@@ -1,4 +1,4 @@
-// Pannello per provare le palette di colori. Quando il proprietario ha scelto, metti false.
+// Pannello per provare il tema chiaro e scuro. Quando non serve più, metti false.
 export const MOSTRA_SELETTORE_TEMA = true;
 
 // Logo nel menu in alto: "solo-logo" mostra solo il logo, grande e sporgente dalla barra, che

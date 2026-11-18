@@ -43,7 +43,7 @@ function ComePrenotare() {
         <ol className="mx-auto grid max-w-4xl gap-5 md:grid-cols-2">
           {passi.map((passo, indice) => (
             <li key={passo.titolo} className="flex gap-4 rounded-2xl bg-superficie p-5 shadow-sm">
-              <span className="font-titolo text-3xl font-semibold text-corallo-testo">{indice + 1}</span>
+              <span className="font-titolo text-3xl font-semibold text-accento-testo">{indice + 1}</span>
               <div>
                 <h3 className="text-lg font-semibold">{passo.titolo}</h3>
                 <p className="mt-1 text-sm text-inchiostro/75">{passo.testo}</p>
@@ -91,7 +91,7 @@ function ComePrenotare() {
         <p className="mt-8 text-center">
           <Link
             to="/contatti"
-            className="inline-block rounded-full bg-corallo px-8 py-3 font-semibold text-white transition-colors hover:bg-corallo-scuro"
+            className="inline-block rounded-full bg-accento px-8 py-3 font-semibold text-white transition-colors hover:bg-accento-scuro"
           >
             Richiedi disponibilità
           </Link>

@@ -16,7 +16,7 @@ function Hero({ etichetta, titolo, sottotitolo, immagine, testoPulsante = "Richi
           {children && <div className="mt-6">{children}</div>}
           <Link
             to={link}
-            className="mt-8 inline-block rounded-full bg-corallo px-8 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-corallo-scuro"
+            className="mt-8 inline-block rounded-full bg-accento px-8 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-accento-scuro"
           >
             {testoPulsante}
           </Link>

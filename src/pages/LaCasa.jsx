@@ -14,7 +14,7 @@ function LaCasa() {
         <ul className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {numeri.map((voce) => (
             <li key={voce.etichetta} className="rounded-2xl bg-superficie p-5 text-center shadow-sm">
-              <p className="font-titolo text-2xl font-semibold text-corallo-testo">{voce.valore}</p>
+              <p className="font-titolo text-2xl font-semibold text-accento-testo">{voce.valore}</p>
               <p className="mt-1 text-sm text-inchiostro/75">{voce.etichetta}</p>
             </li>
           ))}

@@ -33,7 +33,7 @@ function Navbar() {
 
   const classiLink = ({ isActive }) =>
     `block rounded-full px-3 py-2 text-sm font-medium transition-colors xl:px-4 ${
-      isActive ? "bg-mare text-white hover:bg-corallo" : "text-inchiostro hover:bg-corallo hover:text-white"
+      isActive ? "bg-mare text-white hover:bg-accento" : "text-inchiostro hover:bg-accento hover:text-white"
     }`;
 
   return (
@@ -45,24 +45,23 @@ function Navbar() {
               to="/"
               aria-label={`${SITO.nome}, vai alla home`}
               onClick={() => dispatch(chiudiMenu())}
-              className="group relative block h-full w-24 shrink-0 md:w-32"
+              className="group relative block h-full w-24 shrink-0 md:w-36"
             >
               <span
                 className={`absolute left-0 block motion-safe:transition-all motion-safe:duration-300 ${
-                  grande ? "top-1 size-24 md:top-1.5 md:size-32" : "top-2.5 size-11 md:size-[3.25rem]"
+                  grande ? "top-1 size-24 md:top-1.5 md:size-36" : "top-2.5 size-11 md:size-[3.25rem]"
                 }`}
               >
                 <LogoCorallo
-                  morbido
                   animato
-                  variante={grande ? "completo" : "medio"}
+                  variante={grande ? "completo" : "simbolo"}
                   className="h-full w-full shadow-xl ring-4 ring-superficie"
                 />
               </span>
             </Link>
           ) : (
             <Link to="/" onClick={() => dispatch(chiudiMenu())} className="flex items-center gap-3">
-              <LogoCorallo dimensione={44} />
+              <LogoCorallo dimensione={44} variante="simbolo" />
               <span className="font-titolo text-base font-semibold text-titoli sm:text-xl">{SITO.nome}</span>
             </Link>
           )}
@@ -80,13 +79,13 @@ function Navbar() {
           <div className="flex items-center gap-2">
             <Link
               to="/contatti"
-              className="hidden rounded-full bg-corallo px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-corallo-scuro xl:inline-block"
+              className="hidden rounded-full bg-accento px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-accento-scuro xl:inline-block"
             >
               Richiedi disponibilità
             </Link>
             <button
               type="button"
-              className="rounded-full border border-mare-testo/30 px-4 py-2 text-sm font-medium text-mare-testo transition-colors hover:border-corallo hover:bg-corallo hover:text-white lg:hidden"
+              className="rounded-full border border-mare-testo/30 px-4 py-2 text-sm font-medium text-mare-testo transition-colors hover:border-accento hover:bg-accento hover:text-white lg:hidden"
               onClick={() => dispatch(toggleMenu())}
               aria-expanded={menuAperto}
               aria-controls="menu-mobile"
@@ -109,7 +108,7 @@ function Navbar() {
               <Link
                 to="/contatti"
                 onClick={() => dispatch(chiudiMenu())}
-                className="block rounded-full bg-corallo px-5 py-3 text-center text-sm font-semibold text-white"
+                className="block rounded-full bg-accento px-5 py-3 text-center text-sm font-semibold text-white"
               >
                 Richiedi disponibilità
               </Link>

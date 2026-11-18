@@ -22,14 +22,14 @@ function Mappa() {
           />
         ) : (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-linear-to-br from-mare-scuro to-mare p-6 text-center text-white">
-            <IconaPin className="h-10 w-10 text-corallo-testo" />
+            <IconaPin className="h-10 w-10 text-accento-testo" />
             <p className="max-w-md text-sm text-white/85">
               La mappa è fornita da Google: quando la mostri, Google può usare propri cookie. Decidi tu se caricarla.
             </p>
             <button
               type="button"
               onClick={() => setCaricata(true)}
-              className="rounded-full bg-corallo px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-corallo-scuro"
+              className="rounded-full bg-accento px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accento-scuro"
             >
               Mostra la mappa
             </button>
@@ -41,7 +41,7 @@ function Mappa() {
         <div>
           <p className="font-semibold text-titoli">{SITO.nome}</p>
           <p className="text-sm text-inchiostro/70">{RECAPITI.indirizzo}</p>
-          <p className="mt-1 text-sm font-semibold text-corallo-testo">Fronte spiaggia</p>
+          <p className="mt-1 text-sm font-semibold text-accento-testo">Fronte spiaggia</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <a

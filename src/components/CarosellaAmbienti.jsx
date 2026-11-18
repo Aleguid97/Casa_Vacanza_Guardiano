@@ -140,7 +140,7 @@ function CarosellaAmbienti({ ambienti }) {
             aria-current={i === attivo}
             onClick={() => vaiA(i)}
             className={`h-2.5 rounded-full transition-all duration-300 ${
-              i === attivo ? "w-9 bg-corallo" : "w-2.5 bg-inchiostro/25 hover:bg-inchiostro/50"
+              i === attivo ? "w-9 bg-accento" : "w-2.5 bg-inchiostro/25 hover:bg-inchiostro/50"
             }`}
           />
         ))}

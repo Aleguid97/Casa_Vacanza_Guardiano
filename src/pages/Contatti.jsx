@@ -68,7 +68,7 @@ function Campo({ id, label, errore, children }) {
 }
 
 const classeInput = (errore) =>
-  `w-full rounded-md border bg-white px-3 py-2 text-slate-900 [color-scheme:light] focus:outline-none focus:ring-2 focus:ring-corallo ${
+  `w-full rounded-md border bg-white px-3 py-2 text-slate-900 [color-scheme:light] focus:outline-none focus:ring-2 focus:ring-accento ${
     errore ? "border-red-400" : "border-transparent"
   }`;
 
@@ -167,7 +167,7 @@ function Contatti() {
 
           <button
             type="submit"
-            className="w-full rounded-full bg-corallo px-8 py-3 font-semibold text-white transition-colors hover:bg-corallo-scuro sm:w-auto"
+            className="w-full rounded-full bg-accento px-8 py-3 font-semibold text-white transition-colors hover:bg-accento-scuro sm:w-auto"
           >
             Invia richiesta
           </button>

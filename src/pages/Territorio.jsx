@@ -16,7 +16,7 @@ function Territorio() {
         <ul className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {dallaCasa.map((voce) => (
             <li key={voce.nome} className="rounded-2xl bg-sabbia p-5 text-center">
-              <p className="font-titolo text-2xl font-semibold text-corallo-testo">{voce.distanza}</p>
+              <p className="font-titolo text-2xl font-semibold text-accento-testo">{voce.distanza}</p>
               <p className="mt-1 text-sm font-medium text-inchiostro/80">{voce.nome}</p>
             </li>
           ))}
